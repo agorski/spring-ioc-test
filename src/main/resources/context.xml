@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean id="wstrzykiwana"
+        class="de.ago.test.spring.ioc.Wstrzykiwana"/>
+
+  <bean id="drugieSlonce"
+        class="de.ago.test.spring.ioc.Slonce">
+    <constructor-arg index="0" type="java.lang.String" value="drugie"/>
+  </bean>
+
+  <bean id="pierwszeSlonce"
+        class="de.ago.test.spring.ioc.Slonce">
+    <constructor-arg index="0" type="java.lang.String" value="pierwsze"/>
+  </bean>
+
+
+  <bean id="zalezny"
+        class="de.ago.test.spring.ioc.Zalezny">
+    <property name="opis" value="piekny opis"/>
+  </bean>
+
+</beans>
